@@ -72,9 +72,9 @@ The model is trained to detect the following two classes:
 
 1.  **Start the FastAPI server:**
     ```bash
-    uvicorn app:app --host 0.0.0.0 --port 8000
+    uvicorn app:app --host 0.0.0.0 --port 10000
     ```
-    (If deploying, the port might be set by the platform, e.g., via `$PORT` environment variable).
+    https://blueprint-door-window-detection.onrender.com
 
 ## API Usage
 
@@ -87,4 +87,4 @@ This endpoint accepts a `PNG` or `JPG` blueprint image and returns detected obje
 **`curl` Example:**
 
 ```bash
-curl -X POST -F "file=@/path/to/your/image.png" http://localhost:8000/detect
+curl -X POST -F "file=@/path/to/your/image.png" http://localhost:10000/detect
