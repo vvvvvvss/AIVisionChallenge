@@ -5,7 +5,7 @@ import numpy as np
 
 app = FastAPI()
 model = YOLO('models/best.pt') 
-
+@app.get("/")
 @app.post('/detect')
 async def detect(file: UploadFile = File(...)):
     image = cv2.imdecode(np.frombuffer(await file.read(), np.uint8), cv2.IMREAD_COLOR)
