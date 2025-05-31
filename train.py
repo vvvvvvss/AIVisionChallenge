@@ -1,9 +1,5 @@
 from ultralytics import YOLO
-
-# Load model
-model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # Transfer learning
-
-# Train
+model = YOLO('yolov8n.yaml').load('yolov8n.pt')  
 results = model.train(
     data='dataset.yaml',
     imgsz=640,

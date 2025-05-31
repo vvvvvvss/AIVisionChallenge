@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 
 app = FastAPI()
-model = YOLO('models/best.pt')  # Will be created after training
+model = YOLO('models/best.pt') 
 
 @app.post('/detect')
 async def detect(file: UploadFile = File(...)):

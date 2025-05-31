@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+ultralytics
+python-multipart
+opencv-python
+ Pillow
+# Add any other specific libraries you might have used, e.g., pydantic for specific versions
+numpy
