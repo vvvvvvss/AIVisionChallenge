@@ -14,8 +14,8 @@ An AI-powered API that detects doors and windows in architectural blueprints usi
 ## Setup Instructions
 
 1. Install dependencies:
-```bash
-pip install ultralytics fastapi python-multipart uvicorn opencv-python numpy
+
+`pip install ultralytics fastapi python-multipart uvicorn opencv-python numpy`
 
 
 
@@ -28,7 +28,7 @@ The model is trained to detect the following two classes:
 
 ## Setup and Installation
 
-1.  **Clone the repository (if applicable):**
+1.  **Clone the repository:**
     ```bash
     # git clone <your-repo-url>
     # cd <your-repo-name>
